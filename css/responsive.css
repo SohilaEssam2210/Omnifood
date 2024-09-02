@@ -1,0 +1,308 @@
+/**** Responsive Design ****/
+@media only screen and (max-width: 1200px) {
+  .hero {
+    padding: 0 2rem;
+    gap: 3rem;
+  }
+
+  header {
+    padding: 0 2rem;
+  }
+
+  .hero-sec .hero .hero-text-box p.dec,
+  .hero-sec .hero .hero-btns,
+  .hero-sec .hero .custmors-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hero {
+    padding: 0 3rem;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-sec {
+    padding: 3rem 0 8rem 0;
+  }
+
+  .hero-sec .hero .hero-img {
+    justify-content: center;
+  }
+
+  header {
+    padding: 0 1.5rem;
+  }
+
+  .hero-sec .hero .hero-img-box img {
+    width: 80%;
+  }
+
+  /* header nav ul {
+    display: none;
+  } */
+  .mob-icon {
+    display: block;
+  }
+
+  .mob-icon .menu {
+    font-size: 25px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    padding: 10px;
+  }
+
+  .mob-icon .menu:hover {
+    color: var(--main-color);
+    outline: 3px solid #e9bc94;
+    background-color: #fff;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header nav ul {
+    gap: 20px;
+  }
+
+  .hero-sec .hero .hero-btns a.main-btn,
+  .hero-sec .hero .hero-btns a.learn-more-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .hero-sec .hero .hero-img .custmors-img img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .hero-sec .hero .hero-text-box p.dec {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header {
+    padding: 0 1rem;
+  }
+
+  .hero {
+    padding: 0 1rem;
+  }
+
+  .hero-sec {
+    padding: 2rem 0 7rem 0;
+  }
+
+  .hero-sec .hero .hero-btns {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero-sec .hero .hero-btns a.main-btn,
+  .hero-sec .hero .hero-btns a.learn-more-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .hero-sec .hero .hero-text-box p.dec {
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero-sec .hero .hero-img .custmors-img img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .hero-sec .hero .hero-img-box img {
+    width: 90%;
+  }
+}
+
+/***************menu****************/
+@media only screen and (max-width: 992px) {
+  .mob-icon .close {
+    display: block;
+  }
+
+  header nav ul {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease-in;
+    transform: translateX(100%);
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  header nav ul .close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 33px;
+    cursor: pointer;
+    color: #000;
+    transition: 0.3s ease-in;
+  }
+
+  header nav ul .close:hover {
+    color: rgb(230, 34, 34);
+    font-size: 35px;
+  }
+
+  .nav-open nav ul {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+    z-index: 9999;
+    transition: 0.3s all;
+  }
+
+  header nav ul li a {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .featured .logos img {
+    height: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: 776px) {
+  .featured .logos {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .featured .logos img {
+    height: 1.5rem;
+  }
+
+  .heading-feature {
+    font-size: 1rem;
+  }
+}
+
+/**************HOW**************/
+@media only screen and (max-width: 776px) {
+  .step-number {
+    font-size: 4.4rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+}
+
+/**************** meals *************/
+@media only screen and (max-width: 776px) {
+  .diet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/******************testimonials*********************/
+@media only screen and (max-width: 776px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .opinian figure blockquote {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .opinian figure p {
+    font-size: 1rem;
+  }
+}
+
+/******************Pricing*******************/
+@media only screen and (max-width: 1200px) {
+  .price-plan {
+    justify-self: center;
+    width: 90%;
+  }
+
+  .price-btn a,
+  .price-plan ul li span {
+    font-size: 1rem;
+  }
+
+  .feature {
+    text-align: center;
+  }
+}
+
+/******************Form*******************/
+@media only screen and (max-width: 992px) {
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 25rem;
+    grid-row: 1;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
+}
+
+/******************Footer*******************/
+@media only screen and (max-width: 776px) {
+  footer .footer-heading {
+    font-size: 1.1rem;
+  }
+
+  .col {
+    grid-row: 1;
+    column-gap: 1rem;
+  }
+
+  footer .footer-links li {
+    font-size: 0.8rem;
+  }
+
+  .footer-logo img {
+    height: 1rem;
+  }
+
+  .footer-logo .social li a i {
+    font-size: 1.2rem;
+  }
+
+  .footer-logo p {
+    font-size: 12px;
+  }
+  footer .contact {
+    grid-template-columns: 2fr;
+  }
+}
