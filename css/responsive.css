@@ -250,7 +250,7 @@
 
   .price-btn a,
   .price-plan ul li span {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .feature {
@@ -292,16 +292,17 @@
   }
 
   .footer-logo img {
-    height: 1rem;
+    height: 0.9rem;
   }
 
   .footer-logo .social li a i {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .footer-logo p {
     font-size: 12px;
   }
+
   footer .contact {
     grid-template-columns: 2fr;
   }
